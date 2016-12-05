@@ -1,0 +1,4 @@
+al=$1
+cmd=$2
+echo "alias $al='$cmd'" >> ~/.bash_profile
+source ~/.bash_profile
