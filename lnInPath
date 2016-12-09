@@ -1,0 +1,3 @@
+filename=$1
+linkname=$2
+ln "$filename" "/usr/local/bin/$linkname"
