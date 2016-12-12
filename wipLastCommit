@@ -1,0 +1,9 @@
+wip_commit=$(git log --oneline -n 1 | grep 'WIP')
+if [ -z "$wip_commit" ];
+	then 
+	git add .
+	git commit -m 'WIP'
+else
+	git add .
+	git commit --amend -m 'WIP'
+fi
